@@ -479,6 +479,10 @@
                     <div class="countdown-label">Días</div>
                 </div>
                 <div class="countdown-item">
+                    <div class="countdown-number" id="countdown-hours">00</div>
+                    <div class="countdown-label">Horas</div>
+                </div>
+                <div class="countdown-item">
                     <div class="countdown-number" id="countdown-minutes">00</div>
                     <div class="countdown-label">Minutos</div>
                 </div>
@@ -489,136 +493,166 @@
             </div>
         </div>
     </section>
-
+    
     <section class="registration-section">
-        <div class="form-container">
-            <h2 class="form-title">Registro para asistencia</h2>
-            <form id="registrationForm">
-                <div class="form-group">
-                    <label class="form-label" for="name">Nombre completo</label>
-                    <input type="text" class="form-input" id="name" required>
-                </div>
-                <div class="form-group">
-                    <label class="form-label" for="email">Correo electrónico</label>
-                    <input type="email" class="form-input" id="email" required>
-                </div>
-                <div class="form-group">
-                    <label class="form-label" for="phone">Teléfono de contacto</label>
-                    <input type="tel" class="form-input" id="phone" required>
-                </div>
-                <button type="submit" class="submit-btn">Reservar mi cupo</button>
-            </form>
+        <div class="container">
+            <div class="form-container">
+                <h2 class="form-title">Reserva tu cupo ahora</h2>
+                <form id="registration-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Nombre completo</label>
+                        <input type="text" id="name" class="form-input" placeholder="Ingresa tu nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" id="email" class="form-input" placeholder="Ingresa tu correo electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Número de teléfono</label>
+                        <input type="tel" id="phone" class="form-input" placeholder="Ingresa tu número de teléfono" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="id-type" class="form-label">Tipo de documento</label>
+                        <select id="id-type" class="form-input" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="cc">Cédula de ciudadanía</option>
+                            <option value="ce">Cédula de extranjería</option>
+                            <option value="passport">Pasaporte</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="id-number" class="form-label">Número de documento</label>
+                        <input type="text" id="id-number" class="form-input" placeholder="Ingresa tu número de documento" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Reservar mi entrada</button>
+                </form>
+            </div>
         </div>
     </section>
-
+    
     <section class="faq-section">
         <div class="container">
-            <h2 class="section-title">Preguntas Frecuentes</h2>
+            <h2 class="section-title">Preguntas frecuentes</h2>
             <div class="faq-container">
                 <div class="faq-item">
                     <div class="faq-question">
-                        ¿Cómo garantizar mi cupo?
-                        <i class="fas fa-chevron-down"></i>
+                        ¿Cómo puedo obtener mi entrada? <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        El registro a través de este formulario garantiza tu cupo. Recibirás un correo de confirmación con tu código QR de acceso.
+                        Después de registrarte en este sitio web, recibirás un correo electrónico con un código QR que deberás presentar en la entrada del evento.
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        ¿Qué requisitos debo cumplir?
-                        <i class="fas fa-chevron-down"></i>
+                        ¿Habrá lugares reservados? <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        Ser mayor de 12 años, presentar documento de identidad y mostrar el código QR de confirmación al ingreso.
+                        No, la entrada será por orden de llegada. Te recomendamos llegar con al menos 1 hora de anticipación para conseguir un buen lugar.
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        ¿Puedo llevar acompañantes?
-                        <i class="fas fa-chevron-down"></i>
+                        ¿Se permite el ingreso de menores de edad? <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        Cada persona debe registrarse individualmente. Los cupos son personales e intransferibles.
+                        Sí, los menores de edad pueden asistir acompañados de un adulto responsable. Ambos deben estar registrados.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        ¿Habrá servicio de parqueadero? <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Sí, contaremos con parqueadero gratuito pero con capacidad limitada. Te recomendamos utilizar transporte público o servicios de taxi.
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <section class="social-section">
         <div class="container">
-            <h2 class="social-title">¡Comparte la emoción!</h2>
-            <p class="hashtag">#UTSConDiomedes</p>
+            <h2 class="social-title">Comparte la emoción</h2>
+            <p class="hashtag">#UTSConDiomedes #10AñosRector</p>
             <div class="social-icons">
-                <a href="#" class="social-icon">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" class="social-icon">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" class="social-icon">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" class="social-icon">
-                    <i class="fab fa-tiktok"></i>
-                </a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
             </div>
+            <p>¡No te pierdas esta oportunidad única de disfrutar de Diomedes Díaz en vivo y completamente gratis!</p>
         </div>
     </section>
-
+    
     <footer>
         <div class="container">
-            <img src="./alo/Logo.png" alt="UTS Logo" class="footer-logo"> 
-            <nav class="footer-nav">
-                <a href="#" class="footer-link">Políticas de privacidad</a>
-                <a href="#" class="footer-link">Términos y condiciones</a>
+            <img src="./alo/Logo.png" alt="UTS Logo" class="footer-logo">
+            <div class="footer-nav">
+                <a href="#" class="footer-link">Inicio</a>
+                <a href="#" class="footer-link">Sobre las UTS</a>
+                <a href="#" class="footer-link">Programas académicos</a>
+                <a href="#" class="footer-link">Noticias</a>
                 <a href="#" class="footer-link">Contacto</a>
-            </nav>
-            <p class="copyright">© 2023 Universidad Tecnológica de Santander. Todos los derechos reservados.</p>
+            </div>
+            <p>Unidades Tecnológicas de Santander</p>
+            <p>Calle 10 # 12-34, Bucaramanga, Santander</p>
+            <p>Teléfono: (123) 456-7890</p>
+            <p class="copyright">© 2025 UTS - Todos los derechos reservados</p>
         </div>
     </footer>
-
+    
     <script>
         // Countdown Timer
-        const countdownDate = new Date("2025/10/25 19:00:00").getTime();
-
         function updateCountdown() {
+            const eventDate = new Date('2025-10-25T19:00:00').getTime();
             const now = new Date().getTime();
-            const distance = countdownDate - now;
-
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById('countdown-days').innerHTML = days.toString().padStart(2, '0');
-            document.getElementById('countdown-hours').innerHTML = hours.toString().padStart(2, '0');
-            document.getElementById('countdown-minutes').innerHTML = minutes.toString().padStart(2, '0');
-            document.getElementById('countdown-seconds').innerHTML = seconds.toString().padStart(2, '0');
-
-            if (distance < 0) {
-                clearInterval(countdownInterval);
-                document.querySelector('.countdown-container').innerHTML = '<h3>¡El evento ha comenzado!</h3>';
+            const timeLeft = eventDate - now;
+            
+            if (timeLeft > 0) {
+                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+                
+                document.getElementById('countdown-days').innerText = days.toString().padStart(2, '0');
+                document.getElementById('countdown-hours').innerText = hours.toString().padStart(2, '0');
+                document.getElementById('countdown-minutes').innerText = minutes.toString().padStart(2, '0');
+                document.getElementById('countdown-seconds').innerText = seconds.toString().padStart(2, '0');
+            } else {
+                document.querySelector('.countdown-container').innerHTML = '<p class="highlight" style="font-size: 2rem;">¡El evento ya comenzó!</p>';
             }
         }
-
-        const countdownInterval = setInterval(updateCountdown, 1000);
+        
+        setInterval(updateCountdown, 1000);
         updateCountdown();
-
-        // FAQ Interactivity
-        document.querySelectorAll('.faq-question').forEach(item => {
-            item.addEventListener('click', () => {
-                const parent = item.parentElement;
-                parent.classList.toggle('active');
+        
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            
+            question.addEventListener('click', () => {
+                const currentlyActive = document.querySelector('.faq-item.active');
+                
+                if (currentlyActive && currentlyActive !== item) {
+                    currentlyActive.classList.remove('active');
+                }
+                
+                item.classList.toggle('active');
             });
         });
-
-        // Form Submission
-        document.getElementById('registrationForm').addEventListener('submit', (e) => {
+        
+        // Form submission
+        const form = document.getElementById('registration-form');
+        
+        form.addEventListener('submit', function(e) {
             e.preventDefault();
-            // Add form submission logic here
-            alert('Registro exitoso. Revisa tu correo para la confirmación.');
+            
+            // Here you would normally send the form data to your server
+            // This is just a simulation
+            alert('¡Registro exitoso! Recibirás un correo electrónico con tu entrada digital.');
+            form.reset();
         });
     </script>
 </body>
